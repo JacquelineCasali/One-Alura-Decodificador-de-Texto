@@ -2,11 +2,7 @@
 
 ## Imgem e Video
 
-<!-- <img src="2023-08-23_151138.png">
-
-
-<img src="Video_2023-08-23_150828.wmv"> -->
-
+![Video_2023-08-08_143303](https://github.com/JacquelineCasali/One-Alura-Decodificador-de-Texto/assets/103325619/383ce36b-eb91-459e-8d7b-59333ff08a4f)
 
 # Clone o site
 
