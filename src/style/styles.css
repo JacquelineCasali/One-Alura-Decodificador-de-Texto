@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400;800&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ background: #F3F5FC;
+ font-family: 'Inter', sans-serif;
+ font-size: 32px;
+ font-weight: 400;
+ line-height: 150%;
+ 
+ 
+  }
+header {
+ 
+    height: 70px;
+    border-bottom: none;
+  
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 1240px;
+    margin: auto;
+  
+}
+
+
+.logo{
+  margin-left: 40px;
+    padding: 1rem;
+    top: 40px;
+  }
+
+main {
+  display: flex;
+  /* margin-bottom: 50px;
+  margin-left: 80px; */
+  margin: 0 0 50px  180px;
+  /* min-height: 335px; */
+}
+
+
+.textarea {
+
+ color: #0A3871;
+  border: none;
+ text-transform: lowercase;
+  line-height: 48px;
+  margin-top: 60px;
+  height: 300px;
+
+}
+::placeholder{
+  color: #44555c;
+}
+.textarea:focus, .mensagem:focus{
+  outline: none;
+}
+
+.mensagem {
+  background: #fff;
+  background-image: url('../image/imagem.png' );
+
+/* nao repetir a imagem */
+  background-repeat: no-repeat;
+  /* imagem no centro */
+background-position: center;
+/* tamanho da imagem */
+background-size:70% ;
+  padding: 0.5rem;
+  border-radius: 30px;
+  border: none;
+  color: #0A3871;
+  margin-left: 98px;
+  padding-left: 20px;
+  position: fixed;
+
+
+}
+
+
+/* botão */
+
+.btn-cryptografar,.btn-descryptografar {
+font-size: 24px;
+padding: 0.4rem 1rem;
+border-radius: 35px 10px  45px 0;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+width: 328px;
+height: 70px;
+margin-right: 15px;
+
+}
+.btn-cryptografar {
+  background-color: #4285f4;
+  color: #fff;
+
+}
+
+.btn-descryptografar {
+  background-color: #96B6C5;
+  color: #fff;
+
+}
+
+
+.btn-copiar{
+  position: absolute;
+  background-color: #96B6C5;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  height: 67px;
+  
+  width: 336px;
+   top: 485px;
+  left: 1050px;
+  
+}
+
+.btn-cryptografar:hover ,.btn-descryptografar:hover, .btn-copiar:hover{
+  background-color: #0069d9;
+}
+
+.btn-cryptografar:active ,.btn-descryptografar:active, .btn-copiar:active{
+  background-color: green;
+}
+h6{
+  color:  #495057;
+  font-size: 18px;
+ opacity: 80%;
+ margin-left: 15px;
+}
+
+  /* rodapé */
+  
+  
+  .footer  {
+    padding: 2rem 0;
+    position: absolute;
+    height: 67px;
+    width: 100%;
+    /* position: sticky; */
+      top: 580px;
+  
+  }
+ 
+  .footer .col {
+    display:inline-block;
+
+    text-align: center;
+   margin:  1rem 0 ;
+  }
+  .col{
+    width: 100%;
+  }
+
+  
+  .footer a {
+    font-size: 1.6rem;
+    color: #303030;
+    margin-left: 10px;
+    /* text-align: end; */
+    text-decoration: none;
+
+   
+  }
+  .copyright{
+    /* margin-top: 20px; */
+    font-size: 1.2rem;
+text-align: center;
+  }
+
+  
+  .footer h5 {
+    margin-bottom: 1rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #303030;
+}
+
+/* largura maxima de 480px */
+@media screen and (max-width: 480px) {
+   
+  main {
+    margin-left:18px  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea{
+  width: 80%;
+  margin-left: 20px;
+}
+  h1 {
+    text-align: center;
+  }
+  .btn-cryptografar, .btn-descryptografar {
+    margin:    0    0 20px  20px;
+    width: 80%;
+  
+  }
+  
+  .mensagem {
+    /* background-image: none; */
+    background-size: 100%;
+    margin: 0;
+    width: 80%;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 0;
+    position: relative;
+    height: 300px;
+  
+
+    background-image: url('../image/Frame 5.png' );
+
+    /* nao repetir a imagem */
+      background-repeat: no-repeat;
+
+    background-size:80% ;
+}
+
+
+
+.btn-copiar{
+  position: absolute;
+ left: 75px;
+  top:900px;
+  width: 55%;
+
+
+}
+
+.footer{
+  top:1000px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-area {
+  width: 90%;
+}
+.mensagem {
+  grid-template-columns: repeat(20, 1fr);
+
+  @media (max-width: 767px) {
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1920px) {
+  footer{
+    top:1800px;
+  }
+}
+
